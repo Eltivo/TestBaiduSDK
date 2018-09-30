@@ -2,16 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eltivo.testbaidusdk">
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
-    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!--
     <uses-permission android:name="android.permission.WRITE_SETTINGS" >
@@ -32,12 +32,12 @@
         <!-- Baidu SDK AK鉴权 -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="pFZxKGltv8cLsxrtNPH2Cnms44Tiy7Fm"></meta-data>
+            android:value="pFZxKGltv8cLsxrtNPH2Cnms44Tiy7Fm" />
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"></service>
+            android:process=":remote" />
 
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
@@ -47,10 +47,8 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".Service.MyService"
-            android:enabled="true"
-            android:exported="true"></service>
+        <activity android:name=".Activity.TestLocActivity" />
+        <activity android:name=".Activity.TestMapActivity" />
     </application>
 
 </manifest>
